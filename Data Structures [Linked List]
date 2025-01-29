@@ -1,0 +1,75 @@
+## Singly Linked List
+
+class Node{
+    int data;
+    Node next;
+
+Node(int data)
+{
+    this.data = data;
+    this.next = null;
+}
+}
+class LinkedList
+{
+    Node head,tail;
+    public void insert(int data)
+    {
+        
+    Node newNode = new Node(data);
+    //newNode.next = head;
+    if(head == null)
+    {
+        //System.out.println("List is Empty");
+        head = newNode;
+        tail = newNode;
+        
+    }
+    else
+    {
+        tail.next=newNode;
+        tail = newNode;
+    }
+}
+
+public void insertAtbeginning(int data)
+{
+    Node newNode = new Node(data);
+    newNode.next = head;
+    head = newNode;
+    
+ }
+
+public void display()
+{
+    Node temp = head;
+    while(temp!=null)
+    {
+        System.out.println(temp.data);
+        temp =temp.next;
+    }
+}
+
+}
+class Main 
+{
+    
+
+public static void main (String[] args) {
+    {
+      
+            LinkedList obj = new LinkedList();
+            
+            
+            obj.insert(1000);
+            obj.insert(200);
+            obj.insert(300);
+           
+            
+            obj.insertAtbeginning(500);
+            obj.display();
+            //obj.insertAtbeginning(10);
+    }
+        
+    }
+}
