@@ -1,345 +1,358 @@
-DAY 7
+## Concatenate
 
-STRING METHODS:
-
-PROGRAM 1(Concatenate)
+````java[]
 
 public class Main
 {
 	public static void main(String[] args) {
-	String str1 = "Hello";
-	String str2 ="World";
-	System.out.println(str1 + " " + str2);
-		
+	    String str1="Hello";
+	    String str2="World";
+		System.out.println("print the statement "+str1+" "+str2);
 	}
 }
-_________________________________________________________________________________________________________________________________________________________________________________________
+````
 
-PROGRAM 2(Length())
+##  Length of word
+````java[]
 
 public class Main
 {
 	public static void main(String[] args) {
-	String str1 = "Hello";
-	
-	int length = str1.length();
-	System.out.println("The length of the string is: " + length);
-	 	
+	    String str1="Hello";
+	    String str2="World";
+	    int len=str1.length();
+		System.out.println("print the statement "+str1+" "+str2);
+		System.out.println("length of word "+len);
 	}
 }
+````
 
-_______________________________________________________________________________________________________________________________________________________________________________________
+## charAt Method
 
-PROGRAM 3(CharAt method)
-
-public class Main
-{
-	public static void main(String[] args) {
-	String str1 = "Hello World";
-	
-	char ch = str1.charAt(2);
-	System.out.println(ch);
-	 	
-	}
-}
-
-____________________________________________________________________________________________________________________________________________________________________________________________
-PROGRAM 4(Boolean)
+````java[]
 
 public class Main
 {
 	public static void main(String[] args) {
-	String str1 = "hello world";
-	String str2 = "HELLO WORLD";
-	//String str3 = IgnoreToCase(str2);
-        System.out.println("Checking if the strings are equal: " + (str1.equals(str2)));
- 
-	}
-}
-___________________________________________________________________________________________________________________________________________________________________________________________
-
-PROGRAM 5(Ignore Case)
-
-public class Main
-{
-	public static void main(String[] args) {
-	String str1 = "hello world";
-	String str2 = "HELLO WORLD";
-	//String str3 = IgnoreCase(str2);
-	
-	System.out.println("Checking if the strings are equal and ignoring the cases: " + (str1.equalsIgnoreCase(str2)));
- 
-	}
-}
-______________________________________________________________________________________________________________________________________________________________________________________________
-
-PROGRAM 6(UPPERCASE AND LOWER CASE)
-
-public class Main
-{
-	public static void main(String[] args) {
-	String str1 = "hello world";
-	String str2 = "HELLO WORLD";
-	String str3 = str1.toUpperCase();
-	String str4 = str2.toLowerCase();
-	
-	
-	System.out.println("Converting the strings into upper case: " + str3);
-	System.out.println("Converting the strings into lower case: " + str4);
-	
- 
+	    String str1="Hello";
+	    String str2="World";
+	    int len=str1.length();
+		System.out.println("print the statement "+str1+" "+str2);
+		System.out.println("length of word "+len);
 	}
 }
 
-__________________________________________________________________________________________________________________________________________________________________________________________________
+````
 
-PROGRAM 7(indexOf)
+## Find word equals or not
+
+````java[]
 
 public class Main
 {
 	public static void main(String[] args) {
-	String str1 = "hello world";
-	String str2 = "HELLO WORLD";
-	int ch = str1.indexOf('w');
-	
-	
-	
-	System.out.println("index of the given alphabet is " + ch);
+	    String str1="hello world";
+	    String str2="HELLO WORLD";
 
+	 System.out.println(str1.equals(str2));
 	
- 
 	}
 }
 
-_________________________________________________________________________________________________________________________________________________________________________________________________
+````
+## Convert uppercase and lowercase
 
-PROGRAM 8(lastIndexOf)
+````java[]
+
 
 public class Main
 {
 	public static void main(String[] args) {
-	String str1 = "hello world";
-	String str2 = "HELLO WORLD";
-	int ch = str1.lastIndexOf('o');
-	
-	
-	
-	System.out.println("last index of the given alphabet is " + ch);
+	    String str1="hello world";
+	    String str2="HELLO WORLD";
 
-	
- 
+	 System.out.println(str1.toUpperCase());
+	 
+	System.out.println(str1.toLowerCase());
 	}
 }
 
-__________________________________________________________________________________________________________________________________________________________________________________________________
+````
+## IndexOf method
 
-PROGRAM 9(startsWith and endsWith)
-
-public class Main
-{
-	public static void main(String[] args) {
-	String str1 = "hello world";
-	String str2 = "HELLO WORLD";
-	
-	
-	
-	
-	
-	System.out.println("the word starts with " + str1.startsWith("hello"));
-	System.out.println("the word starts with " + str2.endsWith("WORLD"));
-	
-
-	
- 
-	}
-}
-____________________________________________________________________________________________________________________________________________________________________________________________________
-
-PROGRAM 10(matches)
+````java[]
 
 public class Main
 {
 	public static void main(String[] args) {
-	String str1 = "hello world";
-	String str2 = "HELLO WORLD";
-	
-	
-	
-	
-	
-	System.out.println("check if the given arrays is matching  " + str1.matches(str2));
-	
-	
+	    String str1="hello world";
+	    String str2="HELLO WORLD";
 
-	
- 
+	 System.out.println(str1.indexOf('l'));
+	 
+
 	}
 }
 
-________________________________________________________________________________________________________________________________________________________________________________________________
+````
+## lastIndexOf Method
 
-PROGRAM 11(substring)
+````java[]
 
 public class Main
 {
 	public static void main(String[] args) {
-	String str1 = "hello world";
-	String str2 = "HELLO WORLD";
-	
-	
-	
-	
-	
-	System.out.println("the substring of the given array is:  " + str1.substring(1,4));
-	
+	    String str1="hello world";
+	    String str2="HELLO WORLD";
+
+	 System.out.println(str1.lastIndexOf('l'));
+	 
+
+	}
+}
+````
+
+## startWith and endWith Method
+
+````java[]
+public class Main
+{
+	public static void main(String[] args) {
+	    String str1="i am Nandhu";
+	  
+
+	 System.out.println(str1.startsWith("i"));
+	 System.out.println(str1.endsWith("Nandhu"));
+
+	}
+}
+````
+## SubString Method
+
+````java[]
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str1="i am Nandhu";
+	  
+
+	 System.out.println(str1.substring(4));
 	
 
-	
- 
 	}
 }
 
-_______________________________________________________________________________________________________________________________________________________________________________________
+````
 
-PROGRAM 12(trim)
+## replace Method
+
+````java[]
 
 public class Main
 {
 	public static void main(String[] args) {
-	String str1 = " hello world ";
-	String str2 = "HELLO WORLD";
-	String str3 = str1.trim();
-	
-	
-	
-	
-	System.out.println("trimming the spaces:" + str3);
-	
+	    String str1="i am Nandhu";
+	  
+
+	 System.out.println(str1.replace('a','e'));
 	
 
+	}
+}
+````
+
+## Reverse a String
+
+````java[]
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str1="i am Nandhu";
+	    String reversed=" ";
+	    for(int i=str1.length()-1;i>=0;i--){
+	        reversed+=str1.charAt(i);
+	    }
+
+	 System.out.println("Reversed a String "+ reversed);
 	
- 
+
 	}
 }
 
-__________________________________________________________________________________________________________________________________________________________________________________________
+output:
+Reversed a String  uhdnaN ma i
 
-PROGRAM 13(valueOf)
+````
+
+## Find the occurance of a character in a String
+
+````java[]
 
 public class Main
 {
 	public static void main(String[] args) {
-	String str1 = " hello world ";
-	String str2 = "HELLO WORLD";
-	//String str3 = str1.trim();
-	
-	
-	
-	
-	System.out.println("Value of the alphabet:" + str1.valueOf('w'));
-	
+	    String str1="i am Nandhu";
+	    char ch='a';
+	    int count=0;
+	    for(int i=0;i<str1.length();i++){
+	        if(str1.charAt(i)==ch){
+	            count++;
+	        }
+	    }
+
+	 System.out.println("Count of character "+ count);
 	
 
+	}
+}
+output:
+Count of character 2
+
+````
+## convert character to String
+
+````java[]
+
+public class Main
+{
+	public static void main(String[] args) {
+	    char[] arr={'N','a','n','t','h','i','n','i'};
+	    String str=new String(arr);
+	    System.out.println("convert character to array "+str);
+
 	
- 
+
 	}
 }
 
-________________________________________________________________________________________________________________________________________________________________________________________
+output:
+convert character to array Nanthini
 
-PROGRAM 14(Reverse a string):
+````
+## In a Text Editor Application. If you want to find and replace word in Text using replace,replaceAll,Matches
+````java[]
 
-public class Main
-{
-	public static void main(String[] args) {
-	String str = "hello world";
-    //String str2 = "HELLO WORLD";
-	//String str3 = str1.trim();
-	String reversed = " ";
-    for(int i=str.length()-1;i>=0;i--)
-    {
-        reversed += str.charAt(i);
-    }
-	
-	
-	
-	System.out.print("reversed string is:" + reversed);
-	
-	
+import java.util.*;
 
-	
- 
-	}
-}
-___________________________________________________________________________________________________________________________________________________________________________________________________
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Enter the text:");
+        String text = scanner.nextLine();
 
+    
+        System.out.println("Enter the word to find:");
+        String find = scanner.nextLine();
 
-PROGRAM 15(occurance of the Character in the string)
+        System.out.println("Enter the word to replace:");
+        String replace = scanner.nextLine();
 
-public class Main
-{
-	public static void main(String[] args) {
-	String str = "JasmineDorathy";
-    char ch='a';
-    int count=0;
-    for(int i=0;i<str.length();i++)
-    {
-        if (str.charAt(i) == ch)
-        {
-            count++;
+        String replacedText = text.replace(find, replace);
+        System.out.println("After Replace the character");
+        System.out.println(replacedText);
+
+    
+        String regex = "\\b" + find + "\\b"; 
+        String replacedalltext = text.replaceAll(regex, replace);
+        System.out.println("Using replaceAll method:");
+        System.out.println(replacedalltext);
+        
+        System.out.println("Using matches method:");
+        if (text.matches(".*\\b" + find + "\\b.*")) {
+            System.out.println("The word \"" + find + "\" was found in the text.");
+        } else {
+            System.out.println("The word \"" + find + "\" was not found in the text.");
         }
-    }
-	
-	
-	
-	System.out.print("occurance if the Character in the string is:" + count);
-	
-	
 
-	
- 
-	}
-}
-
-__________________________________________________________________________________________________________________________________________________________________________________________________
-
-PROGRAM 16(Does The string contains the alphabetic characters)
-
-public class Main
-{
-	public static void main(String[] args) {
-	String str = "helloworld89";
-  
-    if(str.matches("[a-z A-Z]+"))
-    {
-        System.out.print("The string contains the alphabetic characters");
-	
-    }
-	
-	else
-	{
-	    System.out.print("The string does not contain the alphabetic characters");
-	}
-	
-     }
-}
-_______________________________________________________________________________________________________________________________________________________________________________________________
-
-
-PROGRAM 17(Convert character to a string)
-
-public class Main
-{
-	public static void main(String[] args) {
-	char [] charArray ={'J','A','S','M','I','N'};
-	String str = new String(charArray);
-  
-   System.out.println("Conversion of charArray to string: " + str);
-   
+        scanner.close();
     }
 }
 
-____________________________________________________________________________________________________________________________________________________________________________________________________
+output:
+Enter the text:
+java is object oriented programming language.
+Enter the word to find:
+object
+Enter the word to replace:
+obj
+After Replace the character
+java is obj oriented programming language.
+Using replaceAll method:
+java is obj oriented programming language.
+Using matches method:
+The word "object" was found in the text.
+````
+
+## develop a login system and need to validate the user credential using string method stim, equal, equalignorecase
+
+````java[]
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+    
+        String username = "Admin";
+        String password = "Pass123";
+
+        Scanner scanner = new Scanner(System.in);
+
+    
+        System.out.println("Welcome to the Login System!");
+        System.out.print("Enter your username: ");
+        String un = scanner.nextLine().trim(); 
+
+        System.out.print("Enter your password: ");
+        String pw= scanner.nextLine().trim(); 
+
+        
+        System.out.println("Validation Results:");
+
+        
+        if (un.equals(username) && pw.equals(password)) {
+            System.out.println("Login successful (exact match with equals).");
+        } else {
+            System.out.println("Login failed (case-sensitive comparison).");
+        }
+
+        if (un.equalsIgnoreCase(username) && pw.equals(password)) {
+            System.out.println("Login successful (username case-insensitive with equalsIgnoreCase).");
+        } else {
+            System.out.println("Login failed (case-insensitive username comparison).");
+        }
+
+        System.out.println("\nDebugging Info:");
+        System.out.println("Entered Username (after trim): '" + un + "'");
+        System.out.println("Entered Password (after trim): '" + pw + "'");
+
+        scanner.close();
+    }
+}
+
+output
+Welcome to the Login System!
+Enter your username: admin
+Enter your password: pass123
+Validation Results:
+Login failed (case-sensitive comparison).
+Login failed (case-insensitive username comparison).
+
+Debugging Info:
+Entered Username (after trim): 'admin'
+Entered Password (after trim): 'pass123'
+
+
+````
+
+
+
+
+
+
+
+
 
 
 
