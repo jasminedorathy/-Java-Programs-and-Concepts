@@ -118,11 +118,11 @@ public class Main
 public class Main
 {
 	public static void main(String[] args) {
-	    String str1="i am Nandhu";
+	    String str1="i am jasmine";
 	  
 
 	 System.out.println(str1.startsWith("i"));
-	 System.out.println(str1.endsWith("Nandhu"));
+	 System.out.println(str1.endsWith("jasmine"));
 
 	}
 }
@@ -134,7 +134,7 @@ public class Main
 public class Main
 {
 	public static void main(String[] args) {
-	    String str1="i am Nandhu";
+	    String str1="i am jasmine";
 	  
 
 	 System.out.println(str1.substring(4));
@@ -152,7 +152,7 @@ public class Main
 public class Main
 {
 	public static void main(String[] args) {
-	    String str1="i am Nandhu";
+	    String str1="i am jasmine";
 	  
 
 	 System.out.println(str1.replace('a','e'));
@@ -169,7 +169,7 @@ public class Main
 public class Main
 {
 	public static void main(String[] args) {
-	    String str1="i am Nandhu";
+	    String str1="i am jasmine";
 	    String reversed=" ";
 	    for(int i=str1.length()-1;i>=0;i--){
 	        reversed+=str1.charAt(i);
@@ -193,7 +193,7 @@ Reversed a String  uhdnaN ma i
 public class Main
 {
 	public static void main(String[] args) {
-	    String str1="i am Nandhu";
+	    String str1="i am jasmine";
 	    char ch='a';
 	    int count=0;
 	    for(int i=0;i<str1.length();i++){
@@ -218,7 +218,7 @@ Count of character 2
 public class Main
 {
 	public static void main(String[] args) {
-	    char[] arr={'N','a','n','t','h','i','n','i'};
+	    char[] arr={'J','a','s','m','i','n','e'};
 	    String str=new String(arr);
 	    System.out.println("convert character to array "+str);
 
@@ -228,7 +228,7 @@ public class Main
 }
 
 output:
-convert character to array Nanthini
+convert character to array Jasmine
 
 ````
 ## In a Text Editor Application. If you want to find and replace word in Text using replace,replaceAll,Matches
